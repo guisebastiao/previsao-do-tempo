@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="error">
+        <h2 id="h2-error">Error</h2>
+    </div>
+    <div class="container">
+        <div class="pesquisa">
+            <input type="search" id="search" placeholder="cidade" autocomplete="off">
+            <ion-icon name="search-outline" id="button"></ion-icon>
+            <ion-icon name="chevron-up-outline" id="move"></ion-icon>
+        </div>
+        <div class="resultado">
+            <div class="informacoes">
+                <span id="cidade"></span>
+                <span id="temperatura"></span>
+                <span id="vento"></span>
+            </div>
+            <div class="imagem">            
+                <span id="info-image"></span>
+                <img src="" id="imagem-referencia">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
